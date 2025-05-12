@@ -3,6 +3,7 @@ import BookList from './components/BookList/BookList';
 import BookDetails from './components/BookDetails/BookDetails';
 import BookForm from './components/BookForm/BookForm';
 import { Toaster } from 'react-hot-toast';
+import RTK from './components/RTK/RTK';
 
 function App() {
   const [selectedIsbn, setSelectedIsbn] = useState(null);
@@ -24,11 +25,11 @@ function App() {
 
   return (
     <div className="min-h-screen bg-gray-100 text-gray-800">
-      <header className="bg-blue-950 text-white p-6 shadow">
+      {/* <header className="bg-blue-950 text-white p-6 shadow">
         <h1 className="text-3xl font-bold text-center">📚 Bookstore Management</h1>
-      </header>
+      </header> */}
 
-      <main className="flex flex-col-reverse xl:flex-row gap-6 p-6">
+      {/* <main className="flex flex-col-reverse xl:flex-row gap-6 p-6">
         <section className="xl:w-2/3 bg-white rounded-lg shadow-md border border-gray-200 p-6">
           <h2 className="text-xl font-semibold text-blue-900 mb-4">📋 Book List</h2>
           <BookList onView={handleView} onUpdate={handleUpdate} />
@@ -41,7 +42,11 @@ function App() {
             <BookDetails isbn={selectedIsbn} />
           </div>
         </section>
-      </main>
+      </main> */}
+
+      <div className=''>
+        <RTK />
+      </div>
 
       <Toaster />
     </div>
