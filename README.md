@@ -1,1 +1,1 @@
-# Redux Tookit BookStore
+# Redux Toolkit and RTK Query - BookStore
